@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="瑞士旅遊">
+  <meta name="theme-color" content="#007AFF">
+  <meta name="description" content="瑞士 14 天旅遊行程計畫 — 2026/3/22 ~ 4/4">
+
+  <title>🇨🇭 瑞士 14 天旅遊</title>
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇨🇭</text></svg>">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Offline Banner -->
+  <div class="offline-banner" id="offline-banner">📡 離線模式 — 使用已快取的資料</div>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="app-title"><span class="flag">🇨🇭</span>瑞士行程</div>
+      <div class="header-actions">
+        <button class="btn-icon" id="btn-reset" title="重設資料" aria-label="重設資料">↻</button>
+        <button class="btn-icon" id="btn-edit" title="編輯模式" aria-label="編輯模式">✏️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <!-- Trip Banner -->
+    <div class="trip-banner">
+      <h2>Switzerland Adventure</h2>
+      <p>14 天深度瑞士之旅</p>
+      <div class="trip-dates">
+        <span>📅 3/22 — 4/4</span>
+        <span>🏔️ 14 天</span>
+        <span>🇨🇭 2026</span>
+      </div>
+    </div>
+
+    <!-- Day List -->
+    <div id="day-list"></div>
+  </main>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Scripts -->
+  <script src="./itinerary-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
